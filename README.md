@@ -1,6 +1,6 @@
 # AMLS_assignment22_23
 ## How to run the source code for spark detection?
-1. Install the necessary environment:
+1. Install the necessary environment (python == 3.7.0):
 ```
 pip install -r requirements.txt
 ```
@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-4. The results will be saved in A1, A2, B1 and B2 respectively, and the best model will be saved at the main.py file path.
+4. The results will be output in terminal and saved in A1, A2, B1 and B2 respectively, and the best model will be saved at the main.py file path.
 
 ## Role of each file
 **main.py** is the file to start the whole process of the assignment. It uses the functions provided by **A1.py**, **A2.py**, **B1.py** and **B2.py** to accomplish the classification tasks.
