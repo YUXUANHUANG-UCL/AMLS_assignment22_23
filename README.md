@@ -1,5 +1,5 @@
 # AMLS_assignment22_23
-## How to run the source code for spark detection?
+## How to run the source code for classification?
 1. Install the necessary environment (python == 3.7.0):
 ```
 pip install -r requirements.txt
