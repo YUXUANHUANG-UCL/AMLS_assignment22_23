@@ -1,6 +1,6 @@
 # AMLS_assignment22_23
 ## How to run the source code for classification?
-1. Install the necessary environment (python == 3.7.0):
+1. Install the necessary environment (python == 3.9.0, other version may cause fault like **ImportError: cannot import name ‘OrderedDict‘ from ‘typing‘**):
 ```
 pip install -r requirements.txt
 ```
