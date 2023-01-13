@@ -57,19 +57,6 @@ def KNNClassifier(x_train, y_train, x_test, k):
     y_pred = neigh.predict(x_test)
     return y_pred
 
-def img_SVM(training_images, training_labels, test_images, test_labels, titles, C):
-    # This function is to construct SVMs model and get the prediction results
-    # define model kernels and pack them together after fitting
-    models = (svm.SVC(kernel='linear', C=C),
-          svm.SVC(kernel='poly', degree=3, C=C))
-    models = (clf.fit(training_images, training_labels) for clf in models)
-    pred = []
-    # get the results of svm models that use different kernels
-    for model, i, title in zip(models, range(2), titles):
-        pred.append(model.predict(test_images))
-        print(title + ' ' + "Accuracy:", accuracy_score(test_labels, pred[i]))
-    return pred
-
 def get_B2_results():
     # This function is the main function to solve Task B2
     # whether use google_drive, if use, google_drive = True, if not, google_drive = False
